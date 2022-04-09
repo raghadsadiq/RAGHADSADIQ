@@ -1,0 +1,16 @@
+number = int(input("How many numbers do you want? "))
+lst=[]
+for i in range(0,number):
+    add = int(input("Enter Number: "))
+    lst.append(add)
+
+even = []
+odd = []
+
+for num in lst:
+    if num % 2==0:
+        even += [num]
+    else:
+        odd += [num]
+print("even: ", even)
+print('odd: ', odd)

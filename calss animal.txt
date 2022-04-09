@@ -1,0 +1,44 @@
+abstract class Animal{
+  void printName();
+  void printSound();
+}
+
+class Dog extends Animal{
+ void printName(){
+    print("dog");
+  }
+  void  printSound(){
+    print("woof");
+  }
+}
+class Cat extends Animal{
+void   printName(){
+    print("cat");
+  }
+ void  printSound(){
+    print("meew");
+  }
+}
+class Caw extends Animal{
+ void  printName(){
+    print("caw");
+  }
+ void  printSound(){
+    print("mooooo");
+  }
+}
+
+
+void main(){
+  var c =Cat() ,d =Dog() ,w =Caw();
+  c.printName();
+  c.printSound();
+  print("******************");
+  d.printName();
+  d.printSound();
+  print("*******************");
+  w.printName();
+  w.printSound();
+
+  
+}
